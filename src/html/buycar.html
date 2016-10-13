@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title> 
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/buycar.css" />
+		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../assets/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/buycar.js" ></script>
+		</script>
+	</head>
+	<body>
+		<div class="jyh_toolbar">
+			<div class="jyh_toolbar_box"> 
+			<ul class="jyh_toolbar_left">
+				<li><a href="#">收藏</a></li>
+			</ul>
+			<ul class="jyh_toolbar_right">
+				<li class="ulog">您好，欢迎来到家有汇<span><a href="login.html">【登录】</a></span><span><a href="register.html">【注册】</a></span><span><a href="#">【电视用户激活】</a></span></li>
+				<li><a href="buycar.html">购物车<em id="product_count_top">(0)</em></a></li>
+				<li><a href="#">我的家有</a></li>
+			</ul>
+			</div>			
+		</div>
+		<div class="jyh_head">			
+			<div class="jyh_head_box">
+				<div class="jyh_head_box_log"><a href="#"><img src="../img/jyh_logo-new.png"/></a></div>
+				<div class="jyh_head_box_search">
+					<form id="searchFromId">
+						<input type="text" id="search_val" class="jyh_head_box_search_input" value="羊毛被"/>
+						<input type="button" id="search_btn" class="jyh_head_box_search_btn" value="搜索"/>
+					</form>
+				</div>
+				<div class="jyh_head_box_menu">
+					<ul> 
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="#">今日直播</a></li>
+						<li><a href="#">限时特价</a></li>
+						<li><a href="#">生活家</a></li>
+						<li><a href="#">家有享尊</a></li>
+					</ul>
+				</div>				 
+			</div>
+		</div>
+		<div class="jyh_nav">
+			<div class="jyh_nav_box">
+				<ul>
+					<ul>
+					<li><a href="goodshow.html?ku">厨房用品</a></li>
+					<li><a href="goodshow.html?lt">生活家居</a></li>
+					<li><a href="goodshow.html?ku">厨房电器</a></li>
+					<li><a href="goodshow.html?ku">家纺用品</a></li>
+					<li><a href="goodshow.html?ku">美容护肤</a></li>
+					<li><a href="goodshow.html?ch">服装服饰</a></li>
+					<li><a href="goodshow.html?ku">食品饮料</a></li>
+					<li><a href="goodshow.html?bc">箱包配饰</a></li>
+					<li><a href="goodshow.html?ku">运动健康</a></li>
+					<li><a href="goodshow.html?ku">生活电器</a></li>
+					<li><a href="goodshow.html?ku">3C数码</a></li>
+					<li><a href="goodshow.html?ku">宠物用品</a></li>
+					<li><a href="goodshow.html?ms">母婴用品</a></li>
+				</ul>
+				</ul>
+			</div>
+		</div>
+		<!--公用头结束-->
+		 
+	 
+		<!--content-->
+ 			<div class="w mt30">
+ 				<div class="cart">
+ 					<div class="buy-step buy-step1">
+ 						<span class="on">1.我的购物车</span>
+ 						<span>2.填写订单信息</span>
+ 						<span>3.成功提交订单</span>
+ 					</div>
+ 					<div class="buy-step buy-step2" style="display: none;"> 						
+ 						<span>1.我的购物车</span>
+ 						<span class="on">2.填写订单信息</span>
+ 						<span>3.成功提交订单</span>
+ 					</div>
+ 					<div class="buy-step buy-step3" style="display: none;">
+ 						<span>1.我的购物车</span>
+ 						<span>2.填写订单信息</span>
+ 						<span class="on">3.成功提交订单</span>
+ 					</div>
+ 					<div class="prolist">
+ 						<div class="tab">
+ 							<div class="thead">
+ 								<ul class="tabt">
+ 									<li class="col1">商品编号</li>
+ 									<li class="col2">商品信息</li>
+ 									<li class="col3">商品价格</li>
+ 									<li class="col4">商品数量</li>
+ 									<li class="col5">操作</li>
+ 								</ul>
+ 							</div>
+ 							<div class="tbody">
+ 								<!--<ul>
+ 									<li class="col1">9133497</li>
+ 									<li class="col2">
+ 										<a class="imga f1" href="#"><img src="../img/0fe116fbb44b4ead9ff9e3edc758a54c.jpg"/></a>
+ 										<div class="proname">
+ 											<a href="#">台湾花莲七彩玉石东方美人对瓶（含旋转底座）</a>
+ 											<p>共同共同</p>
+ 											<br>
+ 										</div>
+ 									</li>
+ 									<li class="col3">
+ 										<span class="num">￥6880.00</span>
+ 									</li>
+ 									<li class="col4">
+ 										<div class="wrap-input">
+ 											<a href="#" class="btn-reduce" ubable="false">减少数量</a>
+ 											<input class="text" value="1" />
+ 											<a href="#" class="btn-add" ubable="false">增加数量</a>
+ 										</div>
+ 									</li>
+ 									<li class="col5">
+ 										<a href="#" class="cza">删除</a>
+ 									</li>
+ 								</ul>-->
+ 							</div>
+ 						</div>
+ 						<div class="tolnum">
+ 							<div class="payable">
+ 								<span>共计（不含运费）：
+ 									<!--<em>￥6880.00</em></span>-->
+ 							</div>
+ 							<div class="btns">
+ 								<a class="btn-balance fr" href="#" unable="false">去结算</a>
+ 								<a class="btn-gray f1" href="#">继续购物</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+		<!--jyh_foot-->
+		<div class="jyh_foot">
+			<div class="jyh_foot_server">
+				<div class="jyh_foot_serverlist">
+					<dl>
+						<dt class="aboutwe"><a href="#">关于我们</a></dt>
+						<dd><a href="#">公司介绍</a></dd>
+						<dd><a href="#">招聘信息</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">用户隐私条款</a></dd>
+					</dl>
+					<dl>
+						<dt class="buylead"><a href="#">订购指南</a></dt>
+						<dd><a href="#">交易条款</a></dd>
+						<dd><a href="#">注册/购物流程</a></dd>
+						<dd><a href="#">退/换货</a></dd>
+						<dd><a href="#">积分说明</a></dd>
+						<dd><a href="#">发票指南</a></dd>
+						<dd><a href="#">会员制度说明</a></dd>
+					</dl>
+					<dl>
+						<dt class="deliver"><a href="#">配送服务</a></dt>
+						<dd><a href="#">配送区域</a></dd>
+						<dd><a href="#">配送时间</a></dd>
+						<dd><a href="#">验货与签收</a></dd>
+					</dl>
+					<dl>
+						<dt class="payway"><a href="#">支付方式</a></dt>
+						<dd><a href="#">网上支付</a></dd>
+						<dd><a href="#">货到付款</a></dd>
+					</dl>
+					<dl>
+						<dt class="together"><a href="#">合作专区</a></dt>
+						<dd><a href="#">成为供应商</a></dd>
+						<dd><a href="#">供应商系统</a></dd>
+						<dd><a href="#">合作伙伴</a></dd>
+					</dl>
+				</div>
+				<div class="jyh_foot_iphone"><img src="../img/index_erweima.jpg"/></div>
+			</div>
+			<div class="jyh_foot_market">
+				<div class="jyh_foot_market_box">
+					<img src="../css/img/index_footer_market.jpg"/>
+				</div>
+			</div>
+			<div class="jyh_foot_links">
+				<div class="jyh_foot_linkbox">
+					<p>友情链接:<a href="#">南京手机报价</a>|<a href="#">竞拍</a>|<a href="#">奥莱购</a>|<a href="">商品百科</a></p>
+					<p>Copyright © 2008-2013 jiayougo.com 北京家有德顺文化发展有限公司 版权所有 黔ICP备13002365号 增值电信业务经营许可证：黔B2-20120036</p>
+				</div>
+				<div class="jyh_foot_morelogo">
+					<a href="#"><img src="../img/index_footer_morelogo1.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo2.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo3.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo4.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo5.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo6.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo7.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo8.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo9.jpg"/></a>
+					<a href="#"><img src="../img/hy_124x47.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="movemenu">
+			<ul>
+				<li><a href="#" class="oneshow">手机购物</a></li>
+				<li><a href="#" class="twoshow">关注家有</a></li>
+				<li><a href="#" class="back">返回顶部</a></li>
+			</ul>
+		</div>
+		<div id="moveaskgirl" style="position: fixed;z-index: 10086;bottom: 45px;right: 8px;margin: 0;">
+			<div style="position: relative;overflow: hidden;width: 100px;height: 147px;z-index: 1;background-repeat: no-repeat;font-size: 12px;text-align: left;font-family: '宋体';border: none;">
+				<div style="position: absolute;overflow: hidden;width: 100px;height: 147px;left: 0;top: 0;z-index: 2;background-image: url(../css/img/askgirl.png);background-repeat: no-repeat;font-size: 12px;text-align: left;cursor: pointer;"></div>
+			</div>
+			
+		</div>
+	</body>
+</html>

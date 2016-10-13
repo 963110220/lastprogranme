@@ -1,0 +1,65 @@
+/*注册页面*/
+html,body{background-color: rgb(247,247,247);}
+.headinclude{width: 100%;background-color: #fff;}
+.jyh_register_head{height: 90px;width: 1200px;margin: 0 auto;}
+.jyh_register_head img{width: 186px;height: 59px;float: left;margin: 15px 0 0 10px;padding-right: 17px;border-right: 1px solid #b9b9b9;}
+.jyh_register_head b{font-size: 24px;float: left;display: block;color: #343841;margin-left: 20px;line-height: 85px;padding-right: 350px;}
+.jyh_register_head p{height: 86px;line-height: 86px;cursor: pointer;}
+.jyh_register_head a.sign{color: #3581e0;float: right;padding-top: 25px;}
+ 
+.sign_con{background: url(img/signbg.png) no-repeat;min-height: 620px;width: 100%;padding-top:34px;}
+.sign_main{overflow: hidden;height: auto;padding: 0 0 80px 0;width: 1127px;margin: 0 auto;background: #fff;border: 1px solid #e2e2e2;}
+.sign_main_left_f1{margin-left: 65px;width: 615px;height: 100%;float:left;}
+/*.sign_main_right_f1{margin-top: 105px;padding-left: 65px;border-left: solid 1px #e4e4e4;height: 290px;}*/
+.sign_main_tab h5{color: #E4E4E4;font-size: 20px;padding-bottom: 17px;width: 495px;margin: 40px 0 0 0;overflow: hidden;}
+.sign_main_tab h5 a{color: #91949b;width: 245px;text-align: center;border-bottom: 1px solid #E4E4E4;margin-right: -1px;padding-bottom: 15px;display: inline-block;height: 33px;line-height: 33px;font-weight: bold;cursor: pointer;position: relative;}
+.sign_main_tab h5 a.on{color: #202228;border-bottom: solid 2px #FF7D01;}
+.sign_main_tab h5 a span{height: 30px;border-right: 1px solid #E4E4E4;}
+.sign_main_tab .fr{float: right;}
+.sign_main_tab h5 a.on i{position: absolute;background: url(img/smalljian.jpg) no-repeat;width: 12px;height: 6px;bottom: 0px;left: 50%;}
+
+.jyh_login_box{overflow: hidden;display: block;width: 100%;}
+.jyh_login_box ul{float: left;overflow: hidden;}
+.jyh_login_box ul li{position: relative;float: left;width: 100%;margin: 0 0 15px;}
+.jyh_login_box ul li .spant{width: 85px;text-align: center;font-size: 14px;float: left;display: inline;line-height: 40px;margin-right: 10px;}
+.jyh_login_box ul li .spant em{font-size: 14px;color: #FF7D01;margin: 0 5px 0 0;}
+.jyh_login_box ul li input{width: 320px;float: left;border: 1px solid #dbdbd9;line-height: 40px;padding: 5px 10px;height: 40px;text-indent: 12px;font-size: 14px;}
+.jyh_login_box .potcheck{width: 90px;}
+.jyh_login_box .yan{width: 120px;font-size: 16px;display: inline-block;padding-top: 5px;}
+.jyh_login_box .megcheck{width: 218px;}
+.jyh_login_box .mesyan{display: inline-block;height: 40px;text-align: center;background: #f4f4f4;border: 1px solid #ddd;line-height: 40px;padding: 5px 10px;margin: 0 0 0 10px;cursor: pointer;}
+.jyh_login_box .right_li{padding: 0 0 0 116px;}
+.jyh_login_box .agree{height: 30px;}
+.jyh_login_box .agree p{height: 30px;line-height: 30px;}
+.jyh_login_box .agree p input{height: 20px;width: 20px;margin: 5px 0 0 50px;}
+.jyh_login_box .registerbtn{padding: 0 0 0 116px;}
+.jyh_login_box .rgsbtn{background: #FF7D01;border: none;color:white;font-size: 22px;text-align: center;line-height: 20px;}
+.rightlinebox{float:left;width: 10px;height:435px;border-left: 1px solid #E4E4E4;margin-top: 88px;}
+.sign_main_right_f1{float: right;width: 400px;}
+.sign_main_right_f1 img{margin-top: 88px;width: 300px;margin-right: 10px;}
+.jyh_login_box .swrong{line-height: 40px;color: red;font-size: 12px;display: inline-block;}
+.jyh_login_box .swrong b{background: url(img/setform.png) no-repeat -1px -21px;float: left;display: inline;width: 16px;height: 16px;margin: 11px 4px 0;overflow: hidden;line-height: normal;}
+.jyh_login_box .inputfocus{border: 1px solid #084;}
+.jyh_login_box .inputerro{border: 1px solid #FF0000;}
+/*登录页面*/
+.login_content{width: 1200px;margin: 0 auto 76px;overflow:hidden;}
+.login_left{margin: 68px 47px 0 70px;float: left;display: inline;}
+.login_left img{width: 448px;height: 355px;}
+.login_right{width: 535px;float: left;display: inline;}
+.login_right h3{font-size: 18px;height: 65px;line-height: 65px;}
+.login_right h3 span{font-size: 14px;color: #3581E0;float: right;}
+.login_right h3 b{position:relative;margin-left: 250px;}
+.login_right h3 b i{position: absolute;bottom: -23px;left: 50%;height: 20px;margin-left: -12px;}
+.login_right h3 b i img{vertical-align: top;}
+.login_right .login_right_con{border: solid 1px #dcdbd9;width: 470px;background: #fff;float: right;}
+.login_right .login_right_con p.p_inp{font-size: 14px;margin-bottom: 15px;border: solid 1px #DCDBD9;width: 338px;height: 40px;line-height: 40px;overflow: hidden;}
+.login_right .login_right_con p{width: 342px;margin:  0 auto;margin-left: 65px;float:left;}
+.login_right .login_right_con p.p_inp label{padding: 5px 10px 0px 11px;display: block;float: left;}
+.login_right .login_right_con p.p_inp label img{vertical-align: top;border: 0px;}
+.login_right .login_right_con p.p_inp input{height: 40px;line-height: 40px;border: none;margin-left: -1px;text-indent: 6px;float: left;font-size: 14px;outline: none;}
+.login_right .login_right_con h4.error{color: #fa4a3c;background: url(img/i.png) no-repeat left center;height: 20px;padding-left:24px;margin-top: 20px;margin-bottom: 20px;font-size: 14px;line-height: 20px;}
+.login_right .login_right_con h4{margin-left: 104px;}
+.login_right .login_right_con p.forget_pw_safe{color: #999;padding-bottom:30px;}
+.fr{float: right;display: inline-block;color: #999999;text-decoration: none;outline: none;}
+.clear{display: block;float: none;clear: both;overflow: hidden;visibility: hidden;width: 0;height: 0;background: none;border: 0;font-size: 0;}
+.login_right_con input.anniu{width: 332px;height: 48px;background: #FF7D01;border: 0;cursor: pointer;margin-bottom: 75px;}

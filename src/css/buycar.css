@@ -1,0 +1,45 @@
+.w{width: 1200px;margin: 30px auto 0;}
+.mt30{margin-top: 30px;}
+.cart,.hsale{background: #fff;border: 1px solid #ccc;padding: 0 0 20px;overflow: hidden;}
+.buy-step{height: 30px;font-size: 14px;margin: 30px 0 20px 0;overflow: hidden;}
+.buy-step1{background: url(img/step.png) left top no-repeat;}
+.cart .buy-step{margin-left: 30px;}
+.buy-step span{float: left;display: inline;width: 255px;height: 28px;font-weight: bold;color: #343841;text-align: center;overflow: hidden;}
+.buy-step span on{color: #fff;font-weight: bold;}
+.buy-step2{background: url(img/step.png) left -39px no-repeat;}
+.buy-step3{background: url(img/step.png) left -76px no-repeat;}
+.prolist .tab{margin: 0 25px;}
+.tab{border: 1px solid #E2E2E2;border-bottom: none;overflow: hidden;}
+.tab .tbody,.tab .thead,.tab .tfoot{display: table;width: 100%;overflow: hidden;}
+.tab ul{display: table-row;width: 100%;overflow: hidden;}
+.tab ul li{display: table-cell;padding: 10px 5px;border-bottom: 1px solid #E2E2E2;vertical-align: middle;}
+.tab .tabt li{background: #F0F0F0;text-align: center;}
+.tab .col1{width: 15%;text-align: center;}
+.tab .col2{width: 40%;}
+.tab .col3{width: 15%;text-align: center;}
+.tab .col4{width: 15%;text-align: center;}
+.tab .col5{width: 15%;text-align: center;}
+.tab .thead ul li{height: 30px;line-height: 30px;}
+.tab .tabt .col1{text-indent: 20px;}
+.tab .tbody ul li,.tab .tfoot ul li{height: auto;min-height: 52px;line-height: 52px;}
+.tab .col2 .imga{width: 50px;height: 50px;border: 1px solid #E2E2E2;margin: 0 10px 0 0;}
+.tab .col2 .imga img{width: 50px;height: 50px;border: 0;}
+.f1,.fr{display: inline;}
+.f1{float: left;}
+.fr{float: right;}
+.tab .col2 .proname{padding: 0 0 0 20px;line-height: 22px;font-size: 12px;}
+.tab .col2 .proname a{color: #005ea7;}
+.tab .col2 .proname p{color: #858b9a;}
+.tab .num,.tab .num2{font-size: 12px;color: #636467;}
+.tab .wrap-input{width: 88px;height: 22px;margin: 0 auto;}
+.tab .wrap-input a,.tab .wrap-input input{float: left;display: inline;}
+.tab .wrap-input .btn-reduce{width: 15px;height: 20px;background: url(img/pro-btns.png) 0 -92px no-repeat;border: 1px solid #D6D5D3;line-height: 99em;overflow: hidden;}
+.tab .wrap-input input{width: 54px;height: 20px;line-height: 20px;text-align: center;border: none;border-top: 1px solid #D6D5D3;border-bottom: 1px solid #D6D5D3;color: #888;}
+.tab .wrap-input .btn-add{width: 15px;height: 20px;background: url(img/pro-btns.png) 0 -116px no-repeat;border: 1px solid #D6D5D3;line-height: 99em;overflow: hidden;}
+.tolnum{padding: 20px 35px 20px 25px;overflow: hidden;}
+.tolnum .payable{text-align: right;}
+.tolnum .payable em{font-size: 20px;font-weight: bold;color: #FF7D01;}
+.tolnum .btns{width: 100%;padding: 20px 0;}
+.btn-balance{display: block;background: #FF7D01;width: 188px;height: 40px;line-height: 40px;text-align: center;font-size: 16px;color: #fff;}
+.btn-balance:hover{color: #fff;}
+.btn-gray{border: 1px solid #ccc;background: #F0F0F0;display: inline-block;height: 38px;line-height: 38px;padding: 0 15px;font-size: 14px;}

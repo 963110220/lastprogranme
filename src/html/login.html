@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+ 		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../assets/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/login.js" ></script>
+	</head>
+	<body>
+		<div class="jyh_toolbar">
+			<div class="jyh_toolbar_box"> 
+			<ul class="jyh_toolbar_left">
+				<li><a href="#">收藏家有汇</a></li>
+			</ul>
+			<ul class="jyh_toolbar_right">
+				<li class="ulog">您好，欢迎来到家有汇<span><a href="login.html">【登录】</a></span><span><a href="register.html">【注册】</a></span><span><a href="#">【电视用户激活】</a></span></li>
+				<li><a href="buycar.html">购物车<em id="product_count_top">(0)</em></a></li>
+				<li><a href="#">我的家有</a></li>
+			</ul>
+			</div>			
+		</div>
+		<div class="headinclude">		
+			<div class="jyh_register_head">			
+			 <div>
+			 	<a href="../index.html"><img src="../img/jyh_logo_login.jpg"/></a>
+			 	<b>欢迎登录</b>
+			 </div>
+			</div>
+		</div>
+		 
+		<!--公用头结束-->
+		 
+		 
+	 
+		<!--content-->
+		 <div class="login_content">
+		 	<div class="login_left" style="width:448px;">
+		 		<img src="../img/5e6f53899597453b8100908e7dd72286.jpg" />
+		 	</div>
+		 	<div class="login_right">
+		 		<h3><span><a href="register.html">注册新用户</a></span><b class="tb">用户登录<i><img src="../img/xiangshang.png"/></i></b></h3>
+		 	    <div class="login_right_con">
+		 	    	<h4 id="error_msg" class="error" style="display: none;"></h4>
+		 	    	<p class="p_inp" id="ptop" style="margin-top:60px;">
+		 	    		<label>
+		 	    			<img src="../img/logo_icon1.png" />
+		 	    		</label>
+		 	    		<input type="text" placeholder="请输入用户名" id="username"/>
+		 	    	</p>
+		 	    	<p class="p_inp" >
+		 	    		<label>
+		 	    			<img src="../img/logo_icon2.png" />
+		 	    		</label>
+		 	    		<input type="password" placeholder="请输入密码" id="password"/>
+		 	    	</p>
+		 	    	<p class="forget_pw_safe">
+		 	    		<a class="fr" href="#">忘记密码</a>
+		 	    		<input type="checkbox" id="check"/>
+		 	    		<label>下次自动登录</label>
+		 	    	</p>
+		 	    	<div class="clear"></div>
+		 	    	<p><input type="button" id="login" class="anniu" value="登录" style="color: #fff;font-size: 20px;"/></p>
+		 	    </div>
+		 	</div>
+		 	<div class="clear"></div>
+		 </div>
+				
+ 	 
+		<!--jyh_foot-->
+		<div class="jyh_foot">
+			<div class="jyh_foot_server">
+				<div class="jyh_foot_serverlist">
+					<dl>
+						<dt class="aboutwe"><a href="#">关于我们</a></dt>
+						<dd><a href="#">公司介绍</a></dd>
+						<dd><a href="#">招聘信息</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">用户隐私条款</a></dd>
+					</dl>
+					<dl>
+						<dt class="buylead"><a href="#">订购指南</a></dt>
+						<dd><a href="#">交易条款</a></dd>
+						<dd><a href="#">注册/购物流程</a></dd>
+						<dd><a href="#">退/换货</a></dd>
+						<dd><a href="#">积分说明</a></dd>
+						<dd><a href="#">发票指南</a></dd>
+						<dd><a href="#">会员制度说明</a></dd>
+					</dl>
+					<dl>
+						<dt class="deliver"><a href="#">配送服务</a></dt>
+						<dd><a href="#">配送区域</a></dd>
+						<dd><a href="#">配送时间</a></dd>
+						<dd><a href="#">验货与签收</a></dd>
+					</dl>
+					<dl>
+						<dt class="payway"><a href="#">支付方式</a></dt>
+						<dd><a href="#">网上支付</a></dd>
+						<dd><a href="#">货到付款</a></dd>
+					</dl>
+					<dl>
+						<dt class="together"><a href="#">合作专区</a></dt>
+						<dd><a href="#">成为供应商</a></dd>
+						<dd><a href="#">供应商系统</a></dd>
+						<dd><a href="#">合作伙伴</a></dd>
+					</dl>
+				</div>
+				<div class="jyh_foot_iphone"><img src="../img/index_erweima.jpg"/></div>
+			</div>
+			<div class="jyh_foot_market">
+				<div class="jyh_foot_market_box">
+					<img src="../css/img/index_footer_market.jpg"/>
+				</div>
+			</div>
+			<div class="jyh_foot_links">
+				<div class="jyh_foot_linkbox">
+					<p>友情链接:<a href="#">南京手机报价</a>|<a href="#">竞拍</a>|<a href="#">奥莱购</a>|<a href="">商品百科</a></p>
+					<p>Copyright © 2008-2013 jiayougo.com 北京家有德顺文化发展有限公司 版权所有 黔ICP备13002365号 增值电信业务经营许可证：黔B2-20120036</p>
+				</div>
+				<div class="jyh_foot_morelogo">
+					<a href="#"><img src="../img/index_footer_morelogo1.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo2.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo3.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo4.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo5.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo6.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo7.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo8.jpg"/></a>
+					<a href="#"><img src="../img/index_footer_morelogo9.jpg"/></a>
+					<a href="#"><img src="../img/hy_124x47.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="movemenu">
+			<ul>
+				<li><a href="#" class="oneshow">手机购物</a></li>
+				<li><a href="#" class="twoshow">关注家有</a></li>
+				<li><a href="#" class="back">返回顶部</a></li>
+			</ul>
+		</div>
+		<div id="moveaskgirl" style="position: fixed;z-index: 10086;bottom: 45px;right: 8px;margin: 0;">
+			<div style="position: relative;overflow: hidden;width: 100px;height: 147px;z-index: 1;background-repeat: no-repeat;font-size: 12px;text-align: left;font-family: '宋体';border: none;">
+				<div style="position: absolute;overflow: hidden;width: 100px;height: 147px;left: 0;top: 0;z-index: 2;background-image: url(../css/img/askgirl.png);background-repeat: no-repeat;font-size: 12px;text-align: left;cursor: pointer;"></div>
+			</div>
+			
+		</div>
+	</body>
+</html>

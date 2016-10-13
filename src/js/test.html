@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			#datalist img{width: 100px;height: 100px;float: left;}
+		</style>
+		<title>测试ajax</title>
+		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<script>
+			$(function(){
+				$.ajax({
+					url:"goodsnews.json",
+					success:function(res){
+						console.log(res)
+						 
+ 
+						 $.each(res,function(idx,item){
+						 	 $.each(item.s10001, function(idx,item){
+						 	 	 $.each(item.imgexplain, function(num,img){
+						 	 	var $img=$("<img>");
+						 	 	$img.attr({src:img.imgurl}).appendTo("#datalist");
+						 	 }); 
+						 	});
+						 })
+						 
+					}
+				})
+//					$.ajax({
+//					url:"goodsnews.json",
+//					success:function(res){
+//						console.log(res)
+//						 
+// 
+//						 $.each(res,function(idx,item){
+//						 	 $.each(item.s10001, function(idx,item){
+//						 	 	 $.each(item.imgexplain, function(num,img){
+//						 	 	var $img=$("<img>");
+//						 	 	$img.attr({src:img.imgurl}).appendTo("#datalist");
+//						 	 }); 
+//						 	});
+//						 })
+//						 
+//					}
+//				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="datalist">
+			 
+		</div>
+	</body>
+</html>

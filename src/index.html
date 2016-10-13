@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<link rel="stylesheet" href="assets/xcarousel/jquery.xcarousel.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<script type="text/javascript" src="assets/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="assets/xcarousel/jquery.xcarousel.js" ></script>
+		<script>
+			jQuery(function($){
+			console.log($.fn);
+			$('.fiselide').xcarousel({
+				// page:false,
+				autoPlay:true,
+				height:340,
+				width:1262,
+				buttons:false,
+				type:'fade'
+			});
+				$(".back").on("click",function(){
+					$("html body").animate({scrollTop:0});
+				})			
+		});
+		</script>
+	</head>
+	<body>
+		<div class="jyh_toolbar">
+			<div class="jyh_toolbar_box"> 
+			<ul class="jyh_toolbar_left">
+				<li><a href="#">收藏</a></li>
+			</ul>
+			<ul class="jyh_toolbar_right">
+				<li class="ulog">您好，欢迎来到家有汇<span><a href="html/login.html">【登录】</a></span><span><a href="html/register.html">【注册】</a></span><span><a href="#">【电视用户激活】</a></span></li>
+				<li><a href="html/buycar.html">购物车<em id="product_count_top">(0)</em></a></li>
+				<li><a href="#">我的家有</a></li>
+			</ul>
+			</div>			
+		</div>
+		<div class="jyh_head">			
+			<div class="jyh_head_box">
+				<div class="jyh_head_box_log"><a href="#"><img src="img/jyh_logo-new.png"/></a></div>
+				<div class="jyh_head_box_search">
+					<form id="searchFromId">
+						<input type="text" id="search_val" class="jyh_head_box_search_input" value="羊毛被"/>
+						<input type="button" id="search_btn" class="jyh_head_box_search_btn" value="搜索"/>
+					</form>
+				</div>
+				<div class="jyh_head_box_menu">
+					<ul> 
+						<li><a href="index.html">首页</a></li>
+						<li><a href="#">今日直播</a></li>
+						<li><a href="#">限时特价</a></li>
+						<li><a href="#">生活家</a></li>
+						<li><a href="#">家有享尊</a></li>
+					</ul>
+				</div>				 
+			</div>
+		</div>
+		<div class="jyh_nav">
+			<div class="jyh_nav_box">
+				<ul>
+					<li><a href="html/goodshow.html?ku">厨房用品</a></li>
+					<li><a href="html/goodshow.html?ku">生活家居</a></li>
+					<li><a href="html/goodshow.html?ku">厨房电器</a></li>
+					<li><a href="html/goodshow.html?ku">家纺用品</a></li>
+					<li><a href="html/goodshow.html?ku">美容护肤</a></li>
+					<li><a href="html/goodshow.html?ku">服装服饰</a></li>
+					<li><a href="html/goodshow.html?ku">食品饮料</a></li>
+					<li><a href="html/goodshow.html?ku">箱包配饰</a></li>
+					<li><a href="html/goodshow.html?ku">运动健康</a></li>
+					<li><a href="html/goodshow.html?ku">生活电器</a></li>
+					<li><a href="html/goodshow.html?ku">3C数码</a></li>
+					<li><a href="html/goodshow.html?ku">宠物用品</a></li>
+					<li><a href="html/goodshow.html?ku">母婴用品</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--公用头结束-->
+		 
+		<div class="jyh_lunbo">
+			<div class="fiselide">
+				<ul>
+					<li><img src="img/banner1.bmp"/></li>
+					<li><img src="img/banner2.bmp"/></li>
+					<li><img src="img/banner3.bmp"/></li>
+					<li><img src="img/banner4.bmp"/></li>
+				</ul>
+			</div>
+			<div class="today">
+				<h1>今日特价</h1>
+				<div class="surprize">
+					<div class="surprize_write">
+						<h1>￥299.00</h1>
+						<span>￥599.00</span>
+						<p>腰间一号特工腰带</p>
+						<p class="surprize_write_talk">全新功能，公有21项黑科技，你值得拥有</p>
+					</div>
+					<div class="surprize_img">
+						<img src="img/449b18ce975f4120b861a379cdc58208.jpg"/>
+					</div>
+				</div>
+				<div class="phone"><img src="img/index_phone.jpg"/></div>
+				<div class="imglink">
+					<a href="#"><img src="img/index_phone_tb1.jpg" /></a>
+					<a href="#"><img src="img/index_phone_tb2.jpg" /></a>
+					<a href="#"><img src="img/index_phone_tb3.jpg" /></a>
+					<a href="#"><img src="img/index_phone_tb4.jpg" /></a>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="content">
+			<div class="jyh_main_tv">
+				<p><span>TV直播</span><a href="#">查看更多>></a></p>
+			</div>
+			<div class="jyh_main_tv_box">
+				<div class="online_show">
+					<div class="show_write">
+						<h2>正在直播中....</h2>
+						<p class="times">15:55~16:55</p>
+						<p>光茯苓城府定老白茶</p>
+						<p class="speacial">产地正宗,生产条件优越,口香浓郁</p>
+						<div class="price"><span class="now_price">￥598.00</span><span class="old_price">￥897.00</span></div>
+					</div>
+					<div class="show_img"><img src="img/c91295f69c6d436ebebf7a535db54445.jpg"/></div>
+				</div>
+				<div class="tv_listbox">
+					<ul>
+						<li><a href="#"><img src="img/db77ce35171444ec9b97bd9106357baa.jpg"/></a></li>
+						<li class="time">4:00~5:00</li>
+						<li class="name">
+							<p><a href="#">时光流转和白玉盘 赠玛瑙石头</a></p>
+							<p>￥998.00</p>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/e646e70fc3e34d888f74227ae84bf7d7.jpg"/></a></li>
+						<li class="time">5:00~6:00</li>
+						<li class="name">
+							<p><a href="#">时光流转和白玉盘 赠玛瑙石头</a></p>
+							<p>￥998.00</p>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/60fccdc880ed458fbeef5fcfb287cf88.jpg"/></a></li>
+						<li class="time">4:00~5:00</li>
+						<li class="name">
+							<p><a href="#">时光流转和白玉盘 赠玛瑙石头</a></p>
+							<p>￥998.00</p>
+						</li>
+					</ul>					 
+				</div>				
+			</div>
+			
+			<!--直播结束-->
+			<div class="limit_buy">
+				<ul>
+					<li><a href="#"><img src="img/0fe116fbb44b4ead9ff9e3edc758a54c.jpg"/></img?></a></li>
+					<li><a href="#"><img src="img/2233029cbe5042dfa68f348f022d9700.jpg"/></img?></a></li>
+				</ul>
+				<ul class="advert">
+					<li><a href="#"><img src="img/5e6f53899597453b8100908e7dd72286.jpg"/></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/187efa7d078b40e39fb1b5b11371a477.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/0c652fa1b5df4faf9abd40bebb09d684.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/877c3b7ec4274c4a90d0ee878a07ceb8.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li class="top">家有公告<a href="#">更多></a></li>
+					<li class="text">
+						<p><a href="#">惠家有王博:做点事购物移动转型体验</a></p>
+						<p><a href="#">惠家有马英娥:红海时代，如何打造特色电商</a></p>
+						<p><a href="#">超级会员日</a></p>
+						<p><a href="#">满199减100红包领取</a></p>
+					</li>
+ 				</ul>
+			</div>
+			
+			<div class="limit_buy">
+				<ul>
+					<li><a href="#"><img src="img/0fe116fbb44b4ead9ff9e3edc758a54c.jpg"/></img?></a></li>
+ 				</ul>
+				 
+				<ul>
+					<li><a href="#"><img src="img/187efa7d078b40e39fb1b5b11371a477.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/8fc13d3294a14d9dad0fadfcd2e3a2ef.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/877c3b7ec4274c4a90d0ee878a07ceb8.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/04dfe578b1c44a8486272a236c1384f1.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/09f5f74e44f447a696944fc21faa2e18.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/340b5b585b424145b296f32ac6fe2568.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/6f4e2aa483914673b2b9b9bc880c581f.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/becd5c4c8784401184d0409169c5948c.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/e7c3ebf9f46c40289ea16c7bcabc0633.jpg"/></img?></a></li>
+				</ul>
+			</div>
+			<div class="limit_buy">
+				<ul class="advert">
+					<li><a href="#"><img src="img/361d313eb69943278f246d76221e31c3.jpg"/></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/f238adf29ee54569b893d8c96554da82.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/9c0141e7bcb548e09f488f7782cde3b8.jpg"/></img?></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/877c3b7ec4274c4a90d0ee878a07ceb8.jpg"/></img?></a></li>
+				</ul>	
+				<ul>
+					<li><a href="#"><img src="img/07a08a8acd6c4bc883acb8a5b98e9b06.jpg"/></img?></a></li>
+				</ul>	
+				<ul>
+					<li><a href="#"><img src="img/09f5f74e44f447a696944fc21faa2e18.jpg"/></img?></a></li>
+				</ul>	
+				<ul>
+					<li><a href="#"><img src="img/24dafc8695244678ab8afdb75594c3d9.jpg"/></img?></a></li>
+				</ul>	
+			</div>
+		</div>
+		<!--jyh_foot-->
+		<div class="jyh_foot">
+			<div class="jyh_foot_server">
+				<div class="jyh_foot_serverlist">
+					<dl>
+						<dt class="aboutwe"><a href="#">关于我们</a></dt>
+						<dd><a href="#">公司介绍</a></dd>
+						<dd><a href="#">招聘信息</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">用户隐私条款</a></dd>
+					</dl>
+					<dl>
+						<dt class="buylead"><a href="#">订购指南</a></dt>
+						<dd><a href="#">交易条款</a></dd>
+						<dd><a href="#">注册/购物流程</a></dd>
+						<dd><a href="#">退/换货</a></dd>
+						<dd><a href="#">积分说明</a></dd>
+						<dd><a href="#">发票指南</a></dd>
+						<dd><a href="#">会员制度说明</a></dd>
+					</dl>
+					<dl>
+						<dt class="deliver"><a href="#">配送服务</a></dt>
+						<dd><a href="#">配送区域</a></dd>
+						<dd><a href="#">配送时间</a></dd>
+						<dd><a href="#">验货与签收</a></dd>
+					</dl>
+					<dl>
+						<dt class="payway"><a href="#">支付方式</a></dt>
+						<dd><a href="#">网上支付</a></dd>
+						<dd><a href="#">货到付款</a></dd>
+					</dl>
+					<dl>
+						<dt class="together"><a href="#">合作专区</a></dt>
+						<dd><a href="#">成为供应商</a></dd>
+						<dd><a href="#">供应商系统</a></dd>
+						<dd><a href="#">合作伙伴</a></dd>
+					</dl>
+				</div>
+				<div class="jyh_foot_iphone"><img src="img/index_erweima.jpg"/></div>
+			</div>
+			<div class="jyh_foot_market">
+				<div class="jyh_foot_market_box">
+					<img src="css/img/index_footer_market.jpg"/>
+				</div>
+			</div>
+			<div class="jyh_foot_links">
+				<div class="jyh_foot_linkbox">
+					<p>友情链接:<a href="#">南京手机报价</a>|<a href="#">竞拍</a>|<a href="#">奥莱购</a>|<a href="">商品百科</a></p>
+					<p>Copyright © 2008-2013 jiayougo.com 北京家有德顺文化发展有限公司 版权所有 黔ICP备13002365号 增值电信业务经营许可证：黔B2-20120036</p>
+				</div>
+				<div class="jyh_foot_morelogo">
+					<a href="#"><img src="img/index_footer_morelogo1.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo2.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo3.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo4.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo5.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo6.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo7.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo8.jpg"/></a>
+					<a href="#"><img src="img/index_footer_morelogo9.jpg"/></a>
+					<a href="#"><img src="img/hy_124x47.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="movemenu">
+			<ul>
+				<li><a href="#" class="oneshow">手机购物</a></li>
+				<li><a href="#" class="twoshow">关注家有</a></li>
+				<li><a href="#" class="back">返回顶部</a></li>
+			</ul>
+		</div>
+		<div id="moveaskgirl" style="position: fixed;z-index: 10086;bottom: 45px;right: 8px;margin: 0;">
+			<div style="position: relative;overflow: hidden;width: 100px;height: 147px;z-index: 1;background-repeat: no-repeat;font-size: 12px;text-align: left;font-family: '宋体';border: none;">
+				<div style="position: absolute;overflow: hidden;width: 100px;height: 147px;left: 0;top: 0;z-index: 2;background-image: url(css/img/askgirl.png);background-repeat: no-repeat;font-size: 12px;text-align: left;cursor: pointer;"></div>
+			</div>			
+		</div>
+	</body>
+</html>
